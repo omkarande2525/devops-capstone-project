@@ -1,0 +1,5 @@
+Command:
+curl.exe -s -H "X-Forwarded-Proto: https" http://127.0.0.1:8080/
+
+Output:
+{"name":"Account REST API Service","version":"1.0"}

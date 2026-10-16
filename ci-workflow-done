@@ -1,0 +1,25 @@
+GitHub Actions Workflow: CI Build
+
+build
+Set up job
+Run actions/checkout@v2
+Checkout repository completed
+
+Run python -m pip install --upgrade pip wheel
+Run pip install -r requirements.txt
+Dependencies installed successfully
+
+Run flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics
+0
+Run flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
+0
+
+Run nosetests
+Ran 27 tests in 2.269s
+OK
+
+Post Run actions/checkout@v2
+Stop containers
+Complete job
+
+Workflow completed successfully

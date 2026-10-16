@@ -1,0 +1,19 @@
+Command:
+curl.exe -i -s -H "X-Forwarded-Proto: https" http://127.0.0.1:8080/accounts
+
+Output:
+HTTP/1.1 200 OK
+Server: Werkzeug/2.1.2 Python/3.11.9
+Date: Thu, 26 Mar 2026 14:10:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 26
+Access-Control-Allow-Origin: *
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'; object-src 'none'
+Strict-Transport-Security: max-age=31556926; includeSubDomains
+Referrer-Policy: strict-origin-when-cross-origin
+Connection: close
+
+["<Account Alice id=[1]>"]
